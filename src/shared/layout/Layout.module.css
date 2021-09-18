@@ -1,0 +1,16 @@
+.AppBody {
+  height: calc(100vh - 64px);
+  overflow: hidden;
+  background-color: #f4f4f4;
+  margin-top: 64px;
+  display: flex;
+  flex-direction: row;
+}
+
+.ModuleContainer {
+  display: flex;
+  flex: 1 1 1px;
+  overflow: auto;
+  padding: 0 8px;
+  flex-direction: column;
+}

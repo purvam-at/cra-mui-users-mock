@@ -1,0 +1,33 @@
+.toaster {
+	padding: 8px;
+}
+/* colors are taken from flat UI */
+.success {
+	background-color: #27ae60 !important;
+}
+
+.error {
+	background-color: #e74c3c !important;
+}
+
+.info {
+	background-color: #3498db !important;
+}
+
+.warning {
+	background-color: #f1c40f !important;
+}
+
+icon {
+	font-size: 20px
+}
+
+iconVariant {
+	opacity: 0.9;
+	margin-right: 8px;
+}
+
+message {
+	display: flex;
+	align-items: center;
+}

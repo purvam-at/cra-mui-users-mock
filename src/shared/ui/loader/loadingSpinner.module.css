@@ -1,0 +1,100 @@
+.LoadingContainer {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+	  right: 0;
+	  z-index: 999;
+	  width: 100%;	
+	  height: 100%;
+    display: flex;
+    justify-content: center;
+	align-items: center;
+	background-color: rgba(255,255,255,0.8);
+}
+
+.LoadingDialogContainer {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+	  right: 0;
+	  z-index: 999;
+	  width: 100%;	
+	  height: 100%;
+    display: flex;
+    justify-content: center;
+	  align-items: center;
+	  background-color: rgba(255,255,255,0.8);
+}
+
+.LoadingBlock {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.LoadingText {
+	color: #222 !important;
+	text-align: center;
+	margin-top: 8px !important;
+	text-transform: uppercase;
+	letter-spacing: 2px
+}
+
+/* SVG spinner icon animation */
+.spinner {
+  -webkit-animation: rotate 2s linear infinite;
+          animation: rotate 2s linear infinite;  
+  width: 50px;
+  height: 50px;
+}
+.spinner .path {
+  stroke: #eea849;
+  stroke-linecap: round;
+  -webkit-animation: dash 1.5s ease-in-out infinite;
+          animation: dash 1.5s ease-in-out infinite;
+}
+
+@-webkit-keyframes rotate {
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate {
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes dash {
+  0% {
+    stroke-dasharray: 1, 150;
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dasharray: 90, 150;
+    stroke-dashoffset: -35;
+  }
+  100% {
+    stroke-dasharray: 90, 150;
+    stroke-dashoffset: -124;
+  }
+}
+@keyframes dash {
+  0% {
+    stroke-dasharray: 1, 150;
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dasharray: 90, 150;
+    stroke-dashoffset: -35;
+  }
+  100% {
+    stroke-dasharray: 90, 150;
+    stroke-dashoffset: -124;
+  }
+}

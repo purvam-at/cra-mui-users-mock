@@ -1,0 +1,569 @@
+/* variables */
+
+:root {
+  --cherry: #f44336;
+  --jade: #4fbf9f;
+  --tree: #4caf50;
+  --canary: #fdc96d;
+  --azure: #0576b9;
+  --grape: #3f51b5;
+  --iris: #4878c6;
+  --orange: #ff9100;
+  --peace: #ffffff;
+  --pearl: #e1f5fe;
+  --fuscia: #ef4ea1;
+  --sky: #2d9ee0;
+  --dull: rgba(0, 0, 0, 0.64);
+  --dark: #000000;
+  --scrollbar_bg: #f5f5f5;
+  --scrollbar_thumb: #bdc3c7;
+  --level_1: #fff9c4;
+  --level_2: #ffe0b2;
+  --level_3: #ffccbc;
+  --skype: #03a9f4;
+  --appBg: #f4f4f4;
+  --bg: #fcfcfc;
+  --label: #74808a;
+  --default: #21252e;
+  --error: #ed213a;
+  --disable: #d6d6d6;
+  --emerald: #00c853;
+}
+
+body {
+  color: var(--default);
+}
+
+.Root {
+  flex-grow: 1;
+}
+
+.Mt8 {
+  margin-top: 8px !important;
+}
+
+.Mb8 {
+  margin-bottom: 8px !important;
+}
+
+.Mb4 {
+  margin-bottom: 4px;
+}
+
+.MVer16 {
+  margin: 16px 0 !important;
+}
+
+.MHorizontal16 {
+  margin: 0 16px !important;
+}
+
+.MVer8 {
+  margin: 8px 0 !important;
+}
+
+.MVer3 {
+  margin: 3px 0;
+}
+
+.Mt50 {
+  margin-top: 50px;
+}
+
+.Mb50 {
+  margin-bottom: 50px;
+}
+
+.Mr3 {
+  margin-right: 3px;
+}
+
+.Ml8 {
+  margin-left: 8px !important;
+}
+
+.Mr8 {
+  margin-right: 8px !important;
+}
+
+.Mr16 {
+  margin-right: 16px !important;
+}
+
+.Mb16 {
+  margin-bottom: 16px !important;
+}
+
+.Mt8Mb16 {
+  margin-top: 8px !important;
+  margin-bottom: 16px !important;
+}
+
+.Mt8Mb8 {
+  margin-top: 8px !important;
+  margin-bottom: 8px !important;
+}
+
+.Mt16 {
+  margin-top: 16px !important;
+}
+
+.Mt36 {
+  margin-top: 36px;
+}
+
+.Mt72 {
+  margin-top: 72px;
+}
+
+.P8 {
+  padding: 8px !important;
+}
+
+.P16 {
+  padding: 16px !important;
+}
+
+.PL8 {
+  padding-left: 8px !important;
+}
+
+.P20 {
+  padding: 20px;
+}
+
+.Mt32 {
+  margin-top: 32px;
+}
+
+.OverflowA {
+  overflow: auto;
+}
+.OverflowH {
+  overflow: hidden !important;
+}
+
+.FWidth {
+  width: 100%;
+}
+
+.FHeight {
+  height: 100%;
+}
+
+.H100P {
+  height: 100%;
+}
+
+.W100P {
+  width: 100%;
+}
+
+.HInherit {
+  height: inherit;
+}
+
+.H48 {
+  height: 48px;
+}
+
+.VerDivider {
+  border-right: 1px solid rgba(0, 0, 0, 0.42);
+}
+
+.NoMar {
+  margin: 0 !important;
+}
+
+.PosRel {
+  position: relative;
+}
+
+.PosAbs {
+  position: absolute;
+}
+
+.Spacer {
+  display: flex;
+  flex: 1;
+}
+
+.TextCenter {
+  text-align: center;
+}
+
+.TextRight {
+  text-align: right;
+}
+
+.RightAlignHeaderContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-right: 16px;
+}
+
+.ImageContainer {
+  width: 160px;  
+}
+
+.Br8 {
+  border-radius: 8px;
+}
+
+/* Buttons */
+
+.ButtonContainer {
+  display: flex;
+  /* width: 100%; */
+  justify-content: flex-end;
+  align-items: center;
+  height: 48px;
+  padding: 0 16px;
+}
+
+.ButtonContainer2 {
+  display: flex;
+  /* width: 100%; */
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 16px;
+}
+
+.ButtonContainer > Button {
+  margin: 0 0 0 16px;
+}
+
+.GreyButton {
+  color: var(--dull) !important;
+}
+
+.GreyButton:hover {
+  color: var(--dark) !important;
+}
+
+.ErrorButton {
+  color: var(--error) !important;
+  border-color: var(--error) !important;
+  background-color: var(--peace) !important;
+  opacity: 0.8;
+}
+
+.ErrorButton:hover {
+  opacity: 1;
+}
+
+.ApproveButton {
+  color: var(--tree) !important;
+  border-color: var(--tree) !important;
+  background-color: var(--peace) !important;
+  opacity: 0.8;
+}
+
+.ApproveButton:hover {
+  opacity: 1;
+}
+
+.DeleteButton {
+  color: var(--peace) !important;
+  background: var(--error) !important;
+  background: linear-gradient(to right, #93291e, var(--error));
+  opacity: 0.9;
+}
+
+.DeleteButton:hover {
+  opacity: 1;
+}
+
+.DisabledOutlineButton {
+  cursor: default;
+  pointer-events: none;
+  color: rgba(0, 0, 0, 0.26) !important;
+  border: 1px solid rgba(0, 0, 0, 0.26) !important;
+}
+
+.SaveButton {
+  color: var(--peace) !important;
+  background: var(--jade) !important;
+  background: linear-gradient(to right, #93291e, var(--jade));
+  opacity: 0.9;
+}
+
+.NegativeButton {
+  color: var(--cherry) !important;
+}
+
+.AffermativeButton {
+  color: var(--jade) !important;
+}
+
+.NegativeButtonBackground {
+  color: var(--cherry) !important;
+}
+
+.AffermativeButtonBackground {
+  color: var(--jade) !important;
+}
+
+.ActionButton {
+  color: var(--azure) !important;
+}
+
+.CopyButton {
+  color: var(--sky) !important;
+}
+
+.DisableIconButton {
+  color: rgba(0, 0, 0, 0.26) !important;
+}
+
+.ContainedDisabled {
+  color: rgba(0, 0, 0, 0.26) !important;
+  background: var(--disable) !important;
+}
+
+/* Scrollbar */
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  background-color: var(--scrollbar_bg);
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  background-color: var(--scrollbar_bg);
+}
+
+::-webkit-scrollbar:horizontal {
+  height: 8px;
+  background-color: var(--scrollbar_bg);
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: var(--scrollbar_thumb);
+}
+
+/* Layout */
+
+.ComponentBody {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  height: inherit;
+  box-sizing: border-box;
+  overflow: hidden;
+  position: relative;
+}
+
+.TwoColumnComponentBody {
+  display: flex;
+  flex: 1 1 1px;
+  height: inherit;
+  box-sizing: border-box;
+  position: relative;
+}
+
+/*HELPER CSS*/
+
+.TxtDecoNone {
+  text-decoration: none;
+}
+
+.FlexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ButtonBorder {
+  border: 1px solid !important;
+}
+
+.EditorBorder {
+  border: 1px solid lightgray;
+}
+
+.MarginRight16 {
+  margin-right: 16px;
+}
+
+/* search bar css */
+
+.SearchInput > div::before {
+  border-bottom: 0px solid transparent !important;
+}
+
+.SearchInput div::after {
+  border-bottom: 0px solid transparent !important;
+}
+
+.SearchInputContainer {
+  border: 1px solid rgba(0, 0, 0, 0.54);
+  border-radius: 8px;
+  background-color: #fff;
+}
+
+.SearchInputContainer:focus-within {
+  border: 1px solid #fb8c00;
+  box-sizing: border-box;
+}
+
+
+/* Formik Form */
+
+a {
+  outline: none;
+}
+
+.TextEllipsis {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.FormGroupping {
+  padding: 16px;
+  margin: 0px 0px 16px 0px;
+}
+
+.FormFooter {
+  margin: 0px 0;
+}
+
+.FormControl {
+  width: 70%;
+}
+
+.FormControl90 {
+  width: 90%;
+}
+
+.FullWidthFormControl {
+  width: 100%;
+}
+
+.MinWidth200 {
+  width: 200px;
+}
+
+.BigTextField {
+  margin-top: 36px !important;
+}
+
+.BigTextField input {
+  font-size: 36px;
+}
+
+.OutlineTabs {
+  height: 38px;
+  min-height: 38px !important;
+  border: 1px solid lightgray;
+}
+
+.OutlineTabs button {
+  min-height: 36px;
+  /* width: 33.33%; */
+}
+
+/* Default Routes - Login / Registration / Forgot Password  */
+
+.DefaultRouteContainer {
+  width: 100%;
+  height: 100vh;
+  background-image: url("assets/images/bg.svg");
+  background-repeat: no-repeat;
+  background-color: #ffe9a6;
+  background-attachment: fixed;
+  background-size: cover; 
+}
+
+.Layer {
+  background-color: rgba(0, 0, 0, 0.64);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Grid */
+
+.GridHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 0px 0 16px;
+  min-height: 48px;
+}
+
+.InputRoot {
+  color: inherit;
+  width: 100%;
+  margin-left: 50px;
+}
+
+.InputInput {
+  flex: 1;
+}
+
+.GridHover:hover {
+  background-color: #fff8e1;
+  transition: 0.1;
+}
+
+/* Pagination */
+
+.Pagination {
+  flex-shrink: 0;
+}
+
+.PaginationContainer {
+  height: 48px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.PaginationContainer table tbody tr td {
+  border-bottom-width: 0px !important;
+}
+
+/* Stepper */
+
+.StepperContentWrapper {
+  padding: 16px;
+  margin: 16px !important;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+}
+
+/* Dialog */
+
+.DialogTitle {
+  padding: 16px 16px !important;
+  font-size: 1rem !important;
+  font-weight: 500 !important;
+  color: #74808a !important;
+}
+
+.DialogAppHeader {
+  color: #fff;
+  background: linear-gradient(to right, #00bfa5, #60cf98);
+  background-color: #00bfa5;
+}
+
+.MuiButton-contained .MuiButton-disabled {
+  background-color: rgba(0, 0, 0, 0.12) !important;
+}
+
+
+.Truncate {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+

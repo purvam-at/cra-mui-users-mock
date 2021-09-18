@@ -1,0 +1,30 @@
+/* Empty Screen */
+
+.EmptyScreenContainer {
+	position: absolute;
+    top: 50%;
+    bottom: 0;
+    left: 50%;
+    right: 0;    
+    z-index: 2;
+    transform: translate(-50%,-50%);
+}
+
+.EmptyScreenView {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;	
+}
+
+.EmptyIconContainer {
+	margin: 20px;
+}
+
+.bodyText {
+	font-size: 1.2rem !important;
+	margin-left: 15px;
+	margin-right: 15px;
+	height: auto;
+	text-align: center;
+}
