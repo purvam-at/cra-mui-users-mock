@@ -57,7 +57,7 @@ function post<T>(url: string, params?: T): Promise<unknown> {
   return new Promise(function (resolve, reject) {
     fetch(url, {
       method: 'POST',
-      credentials: 'include',
+      // credentials: 'include',
       headers: {
         Accept: 'application/json',
         'Content-Type': 'application/json',
@@ -94,7 +94,7 @@ function get<T>(url: string, params: T): Promise<unknown> {
     fetch(url, {
       method: 'GET',
       //signal: abortSignal,
-      credentials: 'include',
+      // credentials: 'include',
       headers: {
         Accept: 'application/json',
         'Content-Type': 'application/json',
@@ -122,7 +122,7 @@ function put<T>(url: string, params: T) {
   return new Promise(function (resolve, reject) {
     fetch(url, {
       method: 'PUT',
-      credentials: 'include',
+      // credentials: 'include',
       headers: {
         Accept: 'application/json',
         'Content-Type': 'application/json',
@@ -152,7 +152,7 @@ function remove(url: string, params?: number) {
     //url = `${url}/${params}`;
     return fetch(url, {
       method: 'DELETE',
-      credentials: 'include',
+      // credentials: 'include',
       headers: {
         Accept: 'application/json',
         'Content-Type': 'application/json',

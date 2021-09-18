@@ -1,13 +1,14 @@
 interface IConfig {
 	// mock development
-	mockApiServer: string;
+	// mockApiServer: string;
 	// dev api
 	apiServer: string;
 }
 
 const config: IConfig = {
 	// mock json-server
-	mockApiServer: 'https://454c1aaf-279c-4a23-a611-0b4c4026f1cc.mock.pstmn.io',
+	// mockApiServer: 'https://454c1aaf-279c-4a23-a611-0b4c4026f1cc.mock.pstmn.io',
+	// apiServer: 'http://localhost:3000/',
 	// development
 	apiServer: 'http://localhost:3000/api/master',
 };
